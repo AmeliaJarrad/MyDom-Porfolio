@@ -29,7 +29,7 @@ import ProjectList from '../../components/ProjectList/ProjectList';
         <p style={{ color: 'red' }}>{error.message}</p>
       )}
       {fetchStatus === 'SUCCESS' && <ProjectList projects={projects} />}
-      <h2>what's wrong</h2>
+      
     </>
   );
 }

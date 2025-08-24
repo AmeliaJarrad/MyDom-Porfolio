@@ -5,12 +5,15 @@ console.log("Resolved BACKEND_URL:", BACKEND_URL);
 
 export const getAllProjects = async () => {
   // const response = await fetch(BACKEND_URL + '/projects');
+  console.log("Calling getAllProjects...")
   const response = await fetch(BACKEND_URL);
   if (!response.ok) {
     throw new Error('Failed to fetch projects');
   }
   const data = await response.json();
-  return data.projects;
+  console.log('Fetched data:', data);
+  // return data.projects;
+  return data;
 };
 
 export const getProjectById = async (id) => {

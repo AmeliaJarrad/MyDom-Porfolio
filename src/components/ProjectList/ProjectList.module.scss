@@ -1,6 +1,21 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2em;
-    gap: 2em;
+  display: flex;
+  flex-wrap: nowrap; // prevents wrapping to new lines unless you want it
+  overflow-x: auto;   // horizontal scrolling if there are too many projects
+  gap: 2rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    height: 8px;
   }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router';
 import classes from './NavBar.module.scss';
+import { Link } from 'react-router-dom';
 
  function NavBar() {
   const linkStyles = ({ isActive }) =>
@@ -7,16 +8,10 @@ import classes from './NavBar.module.scss';
 
   return (
     <nav className={classes.nav}>
-      <NavLink className={linkStyles} to="/">
-        Home
-      </NavLink>
-      <NavLink className={linkStyles} to="/about">
-        About
-      </NavLink>
-      <NavLink className={linkStyles} to="/projects">
-        Projects
-      </NavLink>
-    
+        <Link to="/">Home</Link>
+      <a href="#about">About</a>
+        <Link to="/projects">Projects</Link>
+      <a href="#contact">Contact</a>  
     </nav>
   );
 }

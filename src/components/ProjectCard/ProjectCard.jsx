@@ -1,12 +1,21 @@
 import classes from './ProjectCard.module.scss';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default function ProjectCard({ projectData }) {
+  const { id, name, description, imageUrl, techStack } = projectData;
+
   return (
-    <article className={classes.card}>
-      <h3>{projectData.name}</h3>
-      <img src={projectData.imageUrl} alt={projectData.name} />
-      <Link to={projectData.id}>See More</Link>
-    </article>
+    <div className={classes.card}>
+      <Link to={`/project/${id}`}>
+        <h3>{name}</h3>
+        <img src={imageUrl} alt={name} />
+      </Link>
+      <p>{description}</p>
+      <div className="tech-stack">
+        {techStack.map((tech) => (
+          <span key={tech}>{tech}</span>
+        ))}
+      </div>
+    </div>
   );
 }

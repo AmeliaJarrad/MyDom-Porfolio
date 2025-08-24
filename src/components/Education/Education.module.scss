@@ -1,0 +1,52 @@
+.education {
+  padding: 2rem 1rem;
+  background-color: #fdfdfd2a;
+}
+
+.heading {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.589);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.degree {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.school {
+  font-weight: bold;
+  color: #555;
+}
+
+.dates {
+  font-style: italic;
+  color: #888;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.description {
+  color: #444;
+  line-height: 1.4;
+}
