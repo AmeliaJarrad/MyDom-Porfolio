@@ -1,28 +1,36 @@
-import { Link } from 'react-router-dom';
+// src/components/Footer/Footer.jsx
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classes from './Footer.module.scss';
 
 export default function Footer() {
   return (
     <footer className={classes.footer}>
-      <div className={classes.topDivider}></div>
-      <div className={classes.content}>
-        <nav className={classes.nav}>
-          <Link to="/">Home</Link>
-          <Link to="/">Portfolio</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-        </nav>
-        <div className={classes.social}>
-          <a href="https://github.com/yourusername" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </div>
-      </div>
-      <div className={classes.bottom}>
-        © {new Date().getFullYear()} Amelia Jarrad. Powered by React, caffeine, and occasional panic.
+      <p className={classes.tagline}>
+        Powered by React, caffeine, and occasional panic.
+      </p>
+      <div className={classes.icons}>
+        <a
+          href="https://github.com/AmeliaJarrad"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FontAwesomeIcon icon={['fab', 'github']} />
+        </a>
+        <a
+          href="https://linkedin.com/in/ameliajarrad"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FontAwesomeIcon icon={['fab', 'linkedin']} />
+        </a>
+        <a
+          href="mailto:amelia@example.com"
+          aria-label="Email"
+        >
+          <FontAwesomeIcon icon={['fas', 'envelope']} />
+        </a>
       </div>
     </footer>
   );

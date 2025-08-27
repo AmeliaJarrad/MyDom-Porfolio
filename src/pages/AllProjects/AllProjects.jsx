@@ -28,7 +28,7 @@ import ProjectList from '../../components/ProjectList/ProjectList';
       {fetchStatus === 'FAILURE' && (
         <p style={{ color: 'red' }}>{error.message}</p>
       )}
-      {fetchStatus === 'SUCCESS' && <ProjectList projects={projects} />}
+      {fetchStatus === 'SUCCESS' && <ProjectList projects={projects} variant="grid" />}
       
     </>
   );

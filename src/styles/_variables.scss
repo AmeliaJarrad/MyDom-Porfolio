@@ -1,0 +1,46 @@
+// ========================================
+// COLORS
+// ========================================
+$color-peach: #ff837a;
+$color-white: #ffffff;
+$color-white-translucent: rgba(255, 255, 255, 0.437);
+$color-glass-background: rgba(255, 255, 255, 0.75);
+$color-light-grey: rgba(245, 245, 245, 0.175);
+$color-dark-text: #1d1c1c;
+$color-link: #007acc;
+$color-text-light: #ffffff;
+
+// ========================================
+//  LAYOUT & SPACING
+// ========================================
+$gap-default: 1rem;
+
+// ========================================
+// BORDERS & SHADOWS
+// ========================================
+$border-radius: 12px;
+$border-radius-small: 8px;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+$box-shadow-base: 10px 5px 20px rgba(0, 0, 0, 0.3);
+$box-shadow-hover: 12px 8px 28px rgba(0, 0, 0, 0.4);
+$box-shadow-image: 0 0 10px rgba(255, 255, 255, 0.2);
+
+// ========================================
+// TYPOGRAPHY
+// ========================================
+$font-family-main: 'Open Sans', sans-serif;
+
+// ========================================
+// DIMENSIONS
+// ========================================
+$max-width-card: 350px;
+$img-max-height-card: 180px;
+
+// ========================================
+// NAV & FOOTER
+// ========================================
+$nav-footer-bg: rgba(255, 255, 255, 0.1);
+$nav-footer-border: 1px solid rgba(255, 255, 255, 0.25);
+$nav-footer-text: #ffffff;
+$nav-hover-accent: $color-peach;
+

@@ -1,19 +1,35 @@
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import classes from './NavBar.module.scss';
-import { Link } from 'react-router-dom';
 
- function NavBar() {
+import monogramGold from '../../assets/logo/Gold_monogram.png'
+import monogramBrown from '../../assets/logo/Brown_monogram.png'
+
+function NavBar() {
   const linkStyles = ({ isActive }) =>
     isActive ? `${classes.link} ${classes.active_link}` : classes.link;
 
   return (
     <nav className={classes.nav}>
-        <Link to="/">Home</Link>
-      <a href="#about">About</a>
-        <Link to="/projects">Projects</Link>
-      <a href="#contact">Contact</a>  
+       <div className={classes.logo}>
+          <img src={monogramGold} alt="Amelia's logo" />
+        </div>
+
+        <div className={classes.links}>
+      <NavLink to="/" className={linkStyles}>
+        Home
+      </NavLink>
+      <NavLink to="/about" className={linkStyles}>
+        About
+      </NavLink>
+      <NavLink to="/projects" className={linkStyles}>
+        Projects
+      </NavLink>
+      <a href="#contact" className={classes.link}>
+        Contact
+      </a>
+      </div>
     </nav>
   );
 }
 
-export default NavBar 
+export default NavBar;

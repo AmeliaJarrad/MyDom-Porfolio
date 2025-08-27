@@ -4,6 +4,7 @@ import About from '../About/About';
 import RecentProjects from '../../components/RecentProjects/RecentProjects';
 import { getAllProjects } from '../../services/project-services';
 import Education from '../../components/Education/Education.jsx';
+import IntroTeaser from '../../components/IntroTeaser/IntroTeaser.jsx';
 
 
 console.log('Home component rendered');
@@ -32,11 +33,12 @@ export default function Home() {
 
   return (
     <>
-      <About />
+
+    <IntroTeaser />
       {fetchStatus === 'LOADING' && <p>Loading projects...</p>}
       {fetchStatus === 'FAILURE' && <p style={{ color: 'red' }}>{error.message}</p>}
       {fetchStatus === 'SUCCESS' && (
-        <RecentProjects projects={projects.slice(0, 3)} />
+    <RecentProjects projects={projects.slice(0, 3)} />
       )}
       <div style={{ marginTop: '1rem' }}>
     </div>

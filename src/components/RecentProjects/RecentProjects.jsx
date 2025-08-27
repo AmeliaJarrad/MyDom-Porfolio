@@ -16,7 +16,7 @@ export default function RecentProjects({ projects }) {
        <Link to="/projects" className={classes.viewAllLink}>
         View All Projects →
         </Link>
-      <ProjectList projects={projects} />
+      <ProjectList projects={projects} variant="compact" />
      
     </section>
   );

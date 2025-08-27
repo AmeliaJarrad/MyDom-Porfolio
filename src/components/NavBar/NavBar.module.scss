@@ -1,31 +1,47 @@
+@use '../../styles/variables' as *;
+@use 'sass:color';
+
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1em 1.5em 1.0em ;
-    max-width: 100%;
-    gap: 2em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    
-    border: 3px inset whitesmoke;
+  display: flex;
+  justify-content: space-between; // to space out logo and links
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $color-light-grey;
+  font-family: $font-family-main;
+  border-radius: $border-radius;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid $color-peach; 
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  img {
+    height: 70px; // adjust as needed
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.842));
   }
-  
-  .link {
-    text-decoration: none;
-    color: #4242be;
-    transition: ease-in-out 0.2s;
-  
-    &:visited {
-      color: #5f4ca3;
-    }
-  
-    &:hover {
-      color: #ff844f;
-      transform: scale(1.05);
-    }
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  color: $color-link;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease, transform 0.2s ease;
+
+  &:visited {
+    color: color.adjust($color-link, $lightness: -10%);
   }
-  
-  .active_link {
-    text-decoration: underline;
-    color: #1717f4;
+
+  &:hover {
+    color: $color-peach;
+    transform: scale(1.05);
   }
+}
+
+.active_link {
+  text-decoration: underline;
+  color: $color-peach;
+}
