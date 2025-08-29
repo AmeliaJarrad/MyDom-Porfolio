@@ -1,0 +1,132 @@
+@use '../../styles/variables' as *;
+@use 'sass:color';
+
+.projectPage {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: $font-family-main;
+  color: $color-dark-text;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $color-dark-text;
+    margin-bottom: 2rem;
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .screenshotGallery {
+    h3 {
+      font-size: 1.8rem;
+      color: $color-peach;
+      margin-bottom: 1rem;
+    }
+
+    .screenshotGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.2rem;
+      justify-items: center;
+
+      .screenshotImage {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: cover;
+        border-radius: $border-radius-small;
+        box-shadow: $box-shadow;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+
+  .projectInfo {
+    background: $color-white-translucent;
+    padding: 2rem;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    text-align: center;
+
+    .description {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+  .techList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+
+    li {
+      @extend %tech-badge;
+      margin: 0.4rem 0.8rem;
+      }
+    }
+
+
+    .links {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+
+      .linkItem {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        min-width: 200px;
+        justify-content: center;
+      }
+
+      .linkText {
+        font-style: italic;
+        font-size: 0.95rem;
+        color: $color-dark-text;
+        padding: 0.6rem 1.2rem;
+        border-radius: $border-radius-small;
+        background-color: $color-light-grey;
+        font-weight: 500;
+        display: inline-block;
+      }
+    }
+  }
+
+  // Shared style for all buttons
+  .linkButton {
+    display: inline-block;
+    
+    padding: 0.6rem 1.2rem;
+    border-radius: $border-radius-small;
+    background-color: $color-peach;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      background-color: color.adjust($color-peach, $lightness: -10%);
+      outline: none;
+    }
+  }
+
+  .backButtonWrapper {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+}

@@ -24,9 +24,9 @@ function NavBar() {
       <NavLink to="/projects" className={linkStyles}>
         Projects
       </NavLink>
-      <a href="#contact" className={classes.link}>
+      <NavLink to="/contact" className={linkStyles}>
         Contact
-      </a>
+      </NavLink>
       </div>
     </nav>
   );

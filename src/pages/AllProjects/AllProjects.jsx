@@ -23,7 +23,7 @@ import ProjectList from '../../components/ProjectList/ProjectList';
     }
   return (
     <>
-      <h1>Projects</h1>
+      <h1 style={{ textAlign: 'center' }}>Projects</h1>
       {fetchStatus === 'LOADING' && <p>Loading...</p>}
       {fetchStatus === 'FAILURE' && (
         <p style={{ color: 'red' }}>{error.message}</p>

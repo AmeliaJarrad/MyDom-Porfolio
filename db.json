@@ -2,105 +2,145 @@
   "projects": [
     {
       "id": "1",
-      "name": "Cafe Project",
-      "description": "Build a pixel perfect website based on a figma design",
-      "imageUrl": "https://placekeanu.com/200/200",
-      "techStack": [
-        "HTML",
-        "CSS",
-        "SCSS"
+      "name": "Todo Apps",
+      "description": "A full-stack todo Apps with React frontend and Spring Boot backend",
+      "imageUrl": "/Apps_Screenshots/todo/todo1.png",
+      "screenshots": [
+        "/Apps_Screenshots/todo/todo1.png",
+        "/Apps_Screenshots/todo/todo2.png",
+        "/Apps_Screenshots/todo/todo3.png"
       ],
-      "createdAt": "13/03/2025",
-      "githubLink": "https://github.com",
-      "demoLink": "https://netlify.com"
+      "techStack": ["React", "Spring Boot", "Java", "MySQL"],
+      "createdAt": "27/08/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/todo",
+      "demoLink": "https://todo.ameliajarrad.site"
     },
     {
       "id": "2",
-      "name": "Portfolio Project",
-      "description": "HTML, CSS personal portfolio website, all about me",
-      "imageUrl": "https://placekeanu.com/200/200",
-      "techStack": [
-        "HTML",
-        "CSS",
-        "SCSS"
+      "name": "Employee Apps",
+      "description": "Employee management Apps with React frontend & Spring Boot backend",
+      "imageUrl": "/Apps_Screenshots/employee/employee1.png",
+      "screenshots": [
+        "/Apps_Screenshots/employee/employee1.png",
+        "/Apps_Screenshots/employee/employee2.png",
+        "/Apps_Screenshots/employee/employee3.png",
+        "/Apps_Screenshots/employee/employee4.png",
+        "/Apps_Screenshots/employee/employee5.png"
       ],
-      "createdAt": "21/03/2025",
-      "githubLink": "https://github.com",
-      "demoLink": "https://netlify.com"
+      "techStack": ["React", "Spring Boot", "Java", "MySQL"],
+      "createdAt": "26/08/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/employee",
+      "demoLink": "https://employee.ameliajarrad.site"
     },
     {
       "id": "3",
-      "name": "Hangman",
-      "description": "Vanilla Javascript hangman game",
-      "imageUrl": "https://placekeanu.com/200/200",
-      "techStack": [
-        "HTML",
-        "CSS",
-        "SCSS",
-        "JavaScript"
+      "name": "Minesweeper",
+      "description": "Console-based Java Minesweeper game with animations",
+      "imageUrl": "/Apps_Screenshots/ms/ms4.png",
+      "screenshots": [
+        "/Apps_Screenshots/ms/ms1.png",
+        "/Apps_Screenshots/ms/ms2.png",
+        "/Apps_Screenshots/ms/ms3.png",
+        "/Apps_Screenshots/ms/ms4.png"
       ],
-      "createdAt": "01/04/2025",
-      "githubLink": "https://github.com",
-      "demoLink": "https://netlify.com"
+      "techStack": ["Java"],
+      "createdAt": "24/08/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/Minesweeper",
+      "demoLink": ""
     },
     {
       "id": "4",
-      "name": "Morse Code",
-      "description": "In Browser Morse code translator",
-      "imageUrl": "https://placekeanu.com/200/200",
-      "techStack": [
-        "HTML",
-        "CSS",
-        "SCSS",
-        "JavaScript"
+      "name": "E-Store",
+      "description": "E-store frontend project pending backend integration",
+      "imageUrl": "/Apps_Screenshots/e-store/estore1.png",
+      "screenshots": [
+        "/Apps_Screenshots/e-store/estore1.png",
+        "/Apps_Screenshots/e-store/estore2.png",
+        "/Apps_Screenshots/e-store/estore3.png"
       ],
-      "createdAt": "08/04/2025",
-      "githubLink": "https://github.com",
-      "demoLink": "https://netlify.com"
+      "techStack": ["React", "Vite", "SCSS"],
+      "createdAt": "14/05/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/E-Store",
+      "demoLink": ""
     },
-
     {
       "id": "5",
-      "name": "Portfolio Website",
-      "githubLink": "",
-      "demoLink": "https://ameliajarrad.github.io/Portfolio-React",
-      "techStack": ["React", "Frontend"],
-      "description": "This very site.",
-      "imageUrl": "https://placekeanu.com/200/200",
-      "createdAt": "17/06/2025"
+      "name": "Cafe Project",
+      "description": "Pixel-perfect website based on a Figma design",
+      "imageUrl": "/Apps_Screenshots/cafe_site/cafe_site1.jpg",
+      "screenshots": [
+        "/Apps_Screenshots/cafe_site/cafe_site1.jpg",
+        "/Apps_Screenshots/cafe_site/cafe_site2.jpg"
+      ],
+      "techStack": ["HTML", "CSS", "SCSS"],
+      "createdAt": "13/03/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/CafeWebsite",
+      "demoLink": ""
     },
-
     {
-      "id": "1d86",
+      "id": "6",
+      "name": "Hangman Game",
+      "description": "Vanilla JS hangman game",
+      "imageUrl": "/Apps_Screenshots/hangman/hangman1.jpg",
+      "screenshots": [
+        "/Apps_Screenshots/hangman/hangman1.jpg",
+        "/Apps_Screenshots/hangman/hangman2.jpg",
+        "/Apps_Screenshots/hangman/hangman3.jpg"
+      ],
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "createdAt": "01/04/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/hangman",
+      "demoLink": ""
+    },
+    {
+      "id": "7",
+      "name": "Morse Code Translator",
+      "description": "In-browser Morse code translator",
+      "imageUrl": "/Apps_Screenshots/morse/Morse1.jpg",
+      "screenshots": [
+        "/Apps_Screenshots/morse/Morse1.jpg",
+        "/Apps_Screenshots/morse/Morse2.jpg"
+      ],
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "createdAt": "08/04/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/Morse",
+      "demoLink": ""
+    },
+    {
+      "id": "8",
       "name": "Google Books",
-      "githubLink": "https://github.com",
-      "demoLink": "https://netlify.com",
-      "techStack": [
-        "CSS",
-        "JavaScript",
-        "React"
+      "description": "React Apps using Google Books API",
+      "imageUrl": "/Apps_Screenshots/gb/gb1.jpg",
+      "screenshots": [
+        "/Apps_Screenshots/gb/gb1.jpg",
+        "/Apps_Screenshots/gb/gb2.png"
       ],
-      "description": "Use react to fetch info from the google books api and display it in a grid ",
-      "imageUrl": "https://placekeanu.com/200/200",
-      "createdAt": "17/04/2025"
+      "techStack": ["React", "JavaScript", "CSS"],
+      "createdAt": "17/04/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/GoogleBooks",
+      "demoLink": ""
     },
     {
-      "id": "1f06",
-      "name": "test",
-      "githubLink": "",
-      "demoLink": "",
-      "techStack": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Java",
-        "Spring",
-        "MySQL"
+      "id": "9",
+      "name": "Portfolio Website",
+      "description": "This site!",
+      "imageUrl": "/Apps_Screenshots/portv1/Portv1.jpg",
+      "screenshots": [
+        "/Apps_Screenshots/portv1/Portv1.jpg"
       ],
-      "description": "test project",
-      "imageUrl": "https://placekeanu.com/200/200",
-      "createdAt": "17/04/2025"
+      "techStack": ["React", "SCSS"],
+      "createdAt": "17/06/2025",
+      "githubLink": "https://github.com/AmeliaJarrad/Portfolio",
+      "demoLink": "https://ameliajarrad.github.io/Portfolio-React"
     }
   ]
 }
+
+
+
+
+
+
+
+
+

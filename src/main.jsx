@@ -10,6 +10,7 @@ import AllProjects from './pages/AllProjects/AllProjects.jsx';
 import './index.scss';
 import NavBar from './components/NavBar/NavBar.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import ContactPage from './pages/ContactPage/ContactPage.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<AllProjects />} />
         <Route path="/project/:id" element={<ProjectPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -11,7 +11,7 @@ export default function ProjectCard({ projectData }) {
         <img src={imageUrl} alt={name} />
       </Link>
       <p>{description}</p>
-      <div className="tech-stack">
+      <div className={classes['tech-stack']}>
         {techStack.map((tech) => (
           <span key={tech}>{tech}</span>
         ))}

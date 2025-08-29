@@ -1,12 +1,16 @@
 // src/components/Footer/Footer.jsx
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classes from './Footer.module.scss';
+import { Link } from 'react-router-dom';
+
 
 export default function Footer() {
   return (
     <footer className={classes.footer}>
       <p className={classes.tagline}>
         Powered by React, caffeine, and occasional panic.
+        <br />
+        © 2025 Amelia Jarrad
       </p>
       <div className={classes.icons}>
         <a
@@ -25,12 +29,12 @@ export default function Footer() {
         >
           <FontAwesomeIcon icon={['fab', 'linkedin']} />
         </a>
-        <a
-          href="mailto:amelia@example.com"
-          aria-label="Email"
+        <Link
+          to="/contact"
+          aria-label="Contact Page"
         >
           <FontAwesomeIcon icon={['fas', 'envelope']} />
-        </a>
+        </Link>
       </div>
     </footer>
   );

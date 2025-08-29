@@ -1,4 +1,5 @@
 @use '../../styles/variables' as *;
+@use 'sass:color';
 
 .aboutSection {
   padding: 2rem 1rem;
@@ -13,7 +14,7 @@
     align-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
-    background: #f7f7f748; // soft pink background
+    background: #f7f7f748; 
     padding: 1.5rem 2rem;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(214, 51, 108, 0.2);
@@ -30,7 +31,7 @@
     h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      color: $color-peach; // nice warm pink
+      color: $color-peach; 
     }
 
     p {
@@ -47,7 +48,7 @@
         display: inline-block;
         margin-right: 1.5rem;
         font-weight: 600;
-        color: #a12a58;
+        color: $color-dark-text;
         text-decoration: none;
         font-size: 1.1rem;
         transition: color 0.3s ease;
@@ -85,7 +86,7 @@
 
     h2 {
       margin-bottom: 0.5rem;
-      color: #7a2f47;
+      color: $color-dark-text;
       font-weight: 700;
       font-size: 1.8rem;
     }
@@ -93,7 +94,7 @@
     p {
       margin-bottom: 1rem;
       font-size: 1.1rem;
-      color: #7a2f47;
+      color: $color-dark-text;
       font-weight: 600;
     }
 
@@ -102,7 +103,7 @@
       justify-content: center;
       gap: 1.5rem;
       font-size: 2rem;
-      color: $color-peach;
+      color: $color-link;
     }
   }
 }
